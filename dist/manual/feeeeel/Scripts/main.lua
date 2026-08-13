@@ -57,7 +57,7 @@ NotifyOnNewObject("/Script/Engine.CameraShakeBase", function(obj)
         return
     end
 
-    local baseIntensity, duration = entry[1], entry[2]
+    local baseIntensity, duration = entry.intensity, entry.duration
     local scale = tonumber(tostring(obj.ShakeScale)) or 1.0
     local intensity = math.min(baseIntensity * scale, 1.0)
 
