@@ -1,0 +1,8 @@
+# I'm purposely leaving out build.ps1 because it contains credentials and I'm lazy
+# If you want to manually build it just copy readme.md from root and replace the other ones
+# then zip up the respective dist folders
+# also you should probably junction the src to the dist folders since git just creates copies of junctions
+build.ps1
+
+# ignore my release zips since they belong in releases
+feeeeel*.zip
